@@ -1,5 +1,5 @@
 # code here!
-require .pry
+require pry
 
 class School
   attr_accessor :student_name, :grade
@@ -12,7 +12,7 @@ class School
 
   def add_student (student_name, grade)
     @roster.each do |grade,students|
-
+      binding.pry
       @rooster = {grade => [students]}
         students.each do
           students << student_name
