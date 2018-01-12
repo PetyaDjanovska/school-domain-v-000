@@ -9,11 +9,14 @@ class School
   end
 
   def add_student (student_name, grade)
-    @roster[grade] = student_name
-    @rooster.each do |grade, students|
+    @roster.each do |grade,students|
+      @rooster[grade] = students
       students.each do
         students << student_name
       end
     end
   end
+
+
+
 end
