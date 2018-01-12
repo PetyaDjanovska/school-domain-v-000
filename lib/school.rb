@@ -24,9 +24,9 @@ class School
   end
 
   def sort
-    @roster.collect do |grade|
-      array = self.grade(grade)
-      array.sort
+    @roster.collect do |grade,students|
+      students = grade(grade)
+      students.sort
     end
   end
 
