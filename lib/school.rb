@@ -11,12 +11,8 @@ class School
   end
 
   def add_student (student_name, grade)
-    @roster.each do |grade,students|
-      binding.pry
-      @rooster = {grade => [students]}
-        students.each do
-          students << student_name
-        end
+    @roster[grade] = [students]
+    students << student_name
     end
   end
 
