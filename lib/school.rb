@@ -24,11 +24,10 @@ class School
   end
 
   def sort
-    @roster.sort.to_h.collect do |grade,students|
+    @roster.sort.collect do |grade,students|
       students = grade(grade)
       students.sort
     end
-    @roster
   end
 
 end
