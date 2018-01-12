@@ -28,6 +28,7 @@ class School
       students = grade(grade)
       students.sort
     end
+    @roster
   end
 
 end
