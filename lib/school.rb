@@ -24,8 +24,7 @@ class School
   end
 
   def sort
-    @roster.sort.to_h.collect do |grade, students|
-      students.sort
+    @roster.sort.to_h
     end
   end
 
