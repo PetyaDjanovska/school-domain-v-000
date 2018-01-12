@@ -2,6 +2,7 @@
 class School
   attr_accessor :student_name, :grade
   attr_reader :roster
+  @rooster[:grade] = []
 
   def initialize(name)
     @name = name
